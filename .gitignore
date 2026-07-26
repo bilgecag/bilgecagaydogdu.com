@@ -9,3 +9,6 @@ portrait2.jpg
 
 # Unrelated document that lives in this folder
 Bilgecag Aydogdu  3276825WR LVL4-6ALL+EREENTERPRISE.004.pdf
+
+# wrangler local build cache
+.wrangler/
