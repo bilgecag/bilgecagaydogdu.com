@@ -12,3 +12,6 @@ Bilgecag Aydogdu  3276825WR LVL4-6ALL+EREENTERPRISE.004.pdf
 
 # wrangler local build cache
 .wrangler/
+
+# Local backup of pre-optimization image originals
+material/original-images/
