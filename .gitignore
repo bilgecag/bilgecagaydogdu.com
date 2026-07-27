@@ -1,19 +1,18 @@
 .DS_Store
-# Ignore local Claude Code config, but keep the shared project skills tracked
-.claude/*
-!.claude/skills/
 
-# Camera originals — multi-MB and not needed to serve the site.
-# All images are base64-embedded inside index.html.
+# Local-only — kept on disk, never pushed to GitHub.
+# Git holds just the site (public/) plus its deploy config (wrangler.jsonc).
+.claude/
+CLAUDE.md
+material/
+
+# Camera originals — multi-MB, not needed to serve the site.
 IMG_*.jpg
 portrait.jpg
 portrait2.jpg
 
-# Unrelated document that lives in this folder
+# Unrelated document that happens to live in this folder
 Bilgecag Aydogdu  3276825WR LVL4-6ALL+EREENTERPRISE.004.pdf
 
 # wrangler local build cache
 .wrangler/
-
-# Local backup of pre-optimization image originals
-material/original-images/
