@@ -1,5 +1,7 @@
 .DS_Store
-.claude/
+# Ignore local Claude Code config, but keep the shared project skills tracked
+.claude/*
+!.claude/skills/
 
 # Camera originals — multi-MB and not needed to serve the site.
 # All images are base64-embedded inside index.html.
