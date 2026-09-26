@@ -8,498 +8,19 @@
 <body>
 
 
-<style>/* cyrillic-ext */
-@font-face {
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/7877e9ac-6758-4821-86c3-0d4022f6adc1.woff2") format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/467d0775-9f78-4cf8-be46-e2a5ffcd31cf.woff2") format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/a31f1de7-fce3-4fbe-85be-d8e522f6290a.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/35a5ee38-5e57-4cd0-bd19-e03176dba75b.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/dd9cb41f-ec73-45b7-9044-e8299e3579cd.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/ffa4adaa-9981-47e5-90da-45dc528b7373.woff2") format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/ee715b6c-eae2-46d2-b8cb-4d8394aaa389.woff2") format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/4e211d7d-de67-413c-b09d-98a224a2eb27.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/7479ffe6-c473-4f2a-8358-c4d4c608ca98.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/09bc8bf8-aa06-4f19-8fa6-a7628c24aa6b.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/006f2d34-d8aa-4d24-b81c-bd2861539bc4.woff2") format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/826280d3-4255-4528-82ba-80e71a041b6a.woff2") format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/4efcf5e3-a35e-4865-b255-ff645a5b1f08.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/ee95596f-09ec-4f18-8930-8bee944c32f2.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/560daa7e-d7bf-4141-b633-6138ed985aef.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/5334b611-319b-4265-a921-079a57946c40.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 450;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/006f2d34-d8aa-4d24-b81c-bd2861539bc4.woff2") format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 450;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/826280d3-4255-4528-82ba-80e71a041b6a.woff2") format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 450;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/4efcf5e3-a35e-4865-b255-ff645a5b1f08.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 450;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/ee95596f-09ec-4f18-8930-8bee944c32f2.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 450;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/560daa7e-d7bf-4141-b633-6138ed985aef.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 450;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/5334b611-319b-4265-a921-079a57946c40.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/006f2d34-d8aa-4d24-b81c-bd2861539bc4.woff2") format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/826280d3-4255-4528-82ba-80e71a041b6a.woff2") format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/4efcf5e3-a35e-4865-b255-ff645a5b1f08.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/ee95596f-09ec-4f18-8930-8bee944c32f2.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/560daa7e-d7bf-4141-b633-6138ed985aef.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/5334b611-319b-4265-a921-079a57946c40.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/006f2d34-d8aa-4d24-b81c-bd2861539bc4.woff2") format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/826280d3-4255-4528-82ba-80e71a041b6a.woff2") format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/4efcf5e3-a35e-4865-b255-ff645a5b1f08.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/ee95596f-09ec-4f18-8930-8bee944c32f2.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/560daa7e-d7bf-4141-b633-6138ed985aef.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("fonts/5334b611-319b-4265-a921-079a57946c40.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/f44fcc9b-ce8d-4edd-986e-deb3b97b17a6.woff2") format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/74d1f744-1002-48b8-8fd5-3e14afa93167.woff2") format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/050a3610-9610-4ea1-944f-60820453bf20.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/06587a4d-5a69-4534-8336-24d812f7a193.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/24ef7889-f36e-4f29-af60-694cce0bade3.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/21219d7e-8df6-4052-bae3-7d929b0019ad.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/f44fcc9b-ce8d-4edd-986e-deb3b97b17a6.woff2") format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/74d1f744-1002-48b8-8fd5-3e14afa93167.woff2") format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/050a3610-9610-4ea1-944f-60820453bf20.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/06587a4d-5a69-4534-8336-24d812f7a193.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/24ef7889-f36e-4f29-af60-694cce0bade3.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/21219d7e-8df6-4052-bae3-7d929b0019ad.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("fonts/f44fcc9b-ce8d-4edd-986e-deb3b97b17a6.woff2") format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("fonts/74d1f744-1002-48b8-8fd5-3e14afa93167.woff2") format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("fonts/050a3610-9610-4ea1-944f-60820453bf20.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("fonts/06587a4d-5a69-4534-8336-24d812f7a193.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("fonts/24ef7889-f36e-4f29-af60-694cce0bade3.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("fonts/21219d7e-8df6-4052-bae3-7d929b0019ad.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+<style>
+/* Fraunces latin-ext italic */
+@font-face{font-family:'Fraunces';font-style:italic;font-weight:400 600;font-display:swap;src:url("fonts/fraunces-italic-latin-ext.woff2") format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+/* Fraunces latin italic */
+@font-face{font-family:'Fraunces';font-style:italic;font-weight:400 600;font-display:swap;src:url("fonts/fraunces-italic-latin.woff2") format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+/* Fraunces latin-ext normal */
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:400 600;font-display:swap;src:url("fonts/fraunces-roman-latin-ext.woff2") format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+/* Fraunces latin normal */
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:400 600;font-display:swap;src:url("fonts/fraunces-roman-latin.woff2") format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+/* Space Grotesk latin-ext normal */
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 600;font-display:swap;src:url("fonts/spacegrotesk-roman-latin-ext.woff2") format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+/* Space Grotesk latin normal */
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 600;font-display:swap;src:url("fonts/spacegrotesk-roman-latin.woff2") format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
 </style>
 <style>
 :root{
@@ -521,10 +42,11 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);
-  font-family:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
+  font-family:'Space Grotesk',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
   -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 a{color:var(--accent);text-decoration:none}
 a:hover{color:var(--ink)}
+em{font-family:'Fraunces',Georgia,serif;font-style:italic}
 img{max-width:100%;display:block}
 @keyframes om-reveal{from{;transform:translateY(14px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
@@ -537,10 +59,10 @@ img{max-width:100%;display:block}
   <header style="position:sticky;top:0;z-index:20;background:color-mix(in oklab,var(--paper) 86%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)">
     <div style="max-width:1120px;margin:0 auto;padding:16px 40px;display:flex;justify-content:space-between;align-items:center;gap:32px">
       <a href="#top" style="display:flex;align-items:baseline;gap:10px;color:var(--ink)">
-        <span style="font-family:'Source Serif 4',Georgia,serif;font-weight:600;font-size:23px;letter-spacing:-0.01em;white-space:nowrap">Bilgecag Aydogdu</span>
-        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink3)">PhD</span>
+        <span style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:23px;letter-spacing:-0.01em;white-space:nowrap">Bilgecag Aydogdu</span>
+        <span style="font-family:'Space Grotesk',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink3)">PhD</span>
       </a>
-      <nav style="display:flex;gap:30px;font-family:'IBM Plex Mono',monospace;font-size:13.5px;letter-spacing:0.1em;text-transform:uppercase">
+      <nav style="display:flex;gap:30px;font-family:'Space Grotesk',monospace;font-size:13.5px;letter-spacing:0.1em;text-transform:uppercase">
         <a href="#about" style="color:var(--ink2);padding:4px 0;border-bottom:1px solid transparent" style-hover="color:var(--accent);border-bottom-color:var(--accent)">About</a>
         <a href="#cv" style="color:var(--ink2);padding:4px 0;border-bottom:1px solid transparent" style-hover="color:var(--accent);border-bottom-color:var(--accent)">CV</a>
         <a href="#publications" style="color:var(--ink2);padding:4px 0;border-bottom:1px solid transparent" style-hover="color:var(--accent);border-bottom-color:var(--accent)">Publications</a>
@@ -563,7 +85,7 @@ img{max-width:100%;display:block}
 
     <section class="hero" style="padding:88px 0 96px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:64px;align-items:start">
       <div style="display:flex;flex-direction:column;align-items:flex-start;gap:0">
-        <p style="margin:0 0 22px;font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink3)">Welcome to my personal page</p>
+        <p style="margin:0 0 22px;font-family:'Space Grotesk',monospace;font-size:14px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink3)">Welcome to my personal page</p>
         <p style="max-width:620px;font-size:18px;line-height:1.7;color:var(--ink2);margin:0 0 36px">I am a data scientist who is curious about finding efficient and scalable ways to turn large-scale behavioral data into evidence for policymaking. Over the past years I have built a research portfolio of novel methodologies using big data for measuring migration and mobility, tested in various crisis situations. Currently, I work at Positium, where our focus is to put mobile phone data-driven statistics pipelines into production across national statistical offices and government agencies.</p>
         <div style="display:flex;gap:10px;flex-wrap:wrap">
           <a href="mailto:bilgecagaydogdu@gmail.com" style="display:inline-flex;align-items:center;padding:12px 22px;border-radius:2px;font-size:14.5px;font-weight:500;background:var(--ink);color:var(--paper);border:1px solid var(--ink);transition:background .15s ease,border-color .15s ease" style-hover="background:var(--accent);border-color:var(--accent)">Email me</a>
@@ -581,10 +103,10 @@ img{max-width:100%;display:block}
 
     <section id="about" style="padding:80px 0;border-bottom:1px solid var(--line);scroll-margin-top:88px;display:grid;grid-template-columns:120px minmax(0,1fr);gap:32px" data-reveal="1">
       <div style="display:flex;flex-direction:column;gap:8px">
-        <h2 style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;margin:0;color:var(--ink)">About</h2>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;margin:0;color:var(--ink)">About</h2>
       </div>
       <div style="max-width:660px;display:flex;flex-direction:column;gap:20px;color:var(--ink2);font-size:17.5px;line-height:1.72;text-wrap:pretty">
-        <p style="margin:0;font-size:20px;line-height:1.6;color:var(--ink);font-family:'Source Serif 4',Georgia,serif">I was born in Çeşme, Turkey, a town 20 km east of the Greek island of Chios. Perhaps because of the geography of where I grew up, I have been fascinated by borders ever since. How can people be that close, and yet that far?</p>
+        <p style="margin:0;font-size:20px;line-height:1.6;color:var(--ink);font-family:'Fraunces',Georgia,serif">I was born in Çeşme, Turkey, a town 20 km east of the Greek island of Chios. Perhaps because of the geography of where I grew up, I have been fascinated by borders ever since. How can people be that close, and yet that far?</p>
         <p style="margin:0">While I was doing my bachelor's in Istanbul, the Syrian war displaced millions of people. The same border that had fascinated me as a child became a route to safety for hundreds of thousands of them, in a very short time. Yet thousands also lost their lives on those journeys, without ever reaching safety.</p>
         <p style="margin:0">This crisis, which started more than a decade ago, is engraved into my professional career. How can we ensure safety for the people who need it most? I look for answers to that question through big data sources. My work lies at the intersection of many politically sensitive boundaries: how do we use big data in an ethical and privacy-preserving manner, for the benefit of people?</p>
         <p style="margin:0">In my PhD thesis I explored novel ways of measuring and analyzing crisis-induced mobility using mobile phone data sources. More recently, I moved into industry, where I put my efforts into operationalizing these methods so that more people can harness the benefits of this data. I am always up for new connections. If any of my work resonates with you, please get in touch.</p>
@@ -593,14 +115,14 @@ img{max-width:100%;display:block}
 
     <section id="cv" style="padding:80px 0;border-bottom:1px solid var(--line);scroll-margin-top:88px;display:grid;grid-template-columns:120px minmax(0,1fr);gap:32px" data-reveal="1">
       <div style="display:flex;flex-direction:column;gap:8px">
-        <h2 style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;margin:0;color:var(--ink)">CV</h2>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;margin:0;color:var(--ink)">CV</h2>
       </div>
       <div class="cvcard" style="display:grid;grid-template-columns:260px minmax(0,1fr);gap:40px;align-items:center;border:1px solid var(--line);background:var(--panel);padding:32px;max-width:880px">
         <a href="Bilgecag_Aydogdu_CV.pdf" target="_blank" rel="noopener" aria-label="Open the full CV as a PDF" style="display:block;border:1px solid var(--line);background:#fff;line-height:0;transition:transform .2s ease,box-shadow .2s ease" style-hover="transform:translateY(-3px);box-shadow:0 12px 28px color-mix(in oklab,var(--ink) 18%,transparent)">
           <img src="cv-preview.png" alt="First page of the CV of Bilgecag Aydogdu" loading="lazy" style="width:100%;height:auto">
         </a>
         <div style="display:flex;flex-direction:column;gap:16px">
-          <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent)">Curriculum Vitae · 2 pages</p>
+          <p style="margin:0;font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent)">Curriculum Vitae · 2 pages</p>
           <p style="margin:0;color:var(--ink2);font-size:16px;line-height:1.65;text-wrap:pretty">Two pages covering my work, education, publications, languages, awards and references.</p>
           <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px">
             <a href="Bilgecag_Aydogdu_CV.pdf" download="" style="display:inline-flex;align-items:center;padding:11px 20px;border-radius:2px;font-size:14px;font-weight:500;background:var(--ink);color:var(--paper);border:1px solid var(--ink);transition:background .15s ease,border-color .15s ease" style-hover="background:var(--accent);border-color:var(--accent)">Download PDF</a>
@@ -612,13 +134,13 @@ img{max-width:100%;display:block}
 
     <section id="publications" style="padding:80px 0;border-bottom:1px solid var(--line);scroll-margin-top:88px;display:grid;grid-template-columns:120px minmax(0,1fr);gap:32px" data-reveal="1">
       <div style="display:flex;flex-direction:column;gap:8px">
-        <h2 style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;margin:0;color:var(--ink)">Publications</h2>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;margin:0;color:var(--ink)">Publications</h2>
       </div>
       <div style="display:flex;flex-direction:column;gap:44px;max-width:820px">
         <p style="margin:0;font-size:18px;line-height:1.68;color:var(--ink2);max-width:640px">Peer-reviewed articles, chapters and conference papers. Full list also on <a href="https://orcid.org/0000-0003-4619-6806" target="_blank" rel="noopener" style="color:var(--accent);border-bottom:1px solid color-mix(in oklab,var(--accent) 35%,transparent)">ORCID</a>.</p>
 
         <div style="display:flex;flex-direction:column;gap:2px">
-          <h3 style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">Journal articles</h3>
+          <h3 style="font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">Journal articles</h3>
           <div class="cards" style="display:grid;gap:1px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));background:var(--line);border:1px solid var(--line);margin-top:8px">
           <article style="background:var(--panel);display:flex;flex-direction:column;transition:background .2s ease" style-hover="background:var(--paper)">
             <div style="padding:22px 24px 12px;border-bottom:1px solid var(--line2)">
@@ -630,15 +152,15 @@ img{max-width:100%;display:block}
                 <g fill="var(--accent)"><circle cx="246" cy="72" r="3.2"></circle><circle cx="263" cy="66" r="3.2"></circle><circle cx="273" cy="85" r="3.2"></circle><circle cx="256" cy="91" r="3.2"></circle><circle cx="241" cy="87" r="3.2"></circle><circle cx="279" cy="71" r="3.2"></circle></g>
                 <defs><marker id="ahA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 1 L9 5 L0 9 z" fill="var(--ink2)"></path></marker></defs>
                 <path d="M134 112 Q180 96 218 88" fill="none" stroke="var(--ink2)" stroke-width="1.4" stroke-dasharray="3 3" marker-end="url(#ahA)"></path>
-                <text x="178" y="88" font-size="10" fill="var(--ink2)" text-anchor="middle" font-family="'IBM Plex Mono',monospace">displacement</text>
-                <text x="62" y="174" font-size="10" fill="var(--ink3)" font-family="'IBM Plex Mono',monospace">pre-event</text>
-                <text x="238" y="36" font-size="10" fill="var(--accent)" font-family="'IBM Plex Mono',monospace">post-event</text>
+                <text x="178" y="88" font-size="10" fill="var(--ink2)" text-anchor="middle" font-family="'Space Grotesk',monospace">displacement</text>
+                <text x="62" y="174" font-size="10" fill="var(--ink3)" font-family="'Space Grotesk',monospace">pre-event</text>
+                <text x="238" y="36" font-size="10" fill="var(--accent)" font-family="'Space Grotesk',monospace">post-event</text>
               </svg>
-              <p style="margin:10px 0 0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:var(--ink3)">fig. 01 — activity-space relocation after a shock</p>
+              <p style="margin:10px 0 0;font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.04em;color:var(--ink3)">fig. 01 — activity-space relocation after a shock</p>
             </div>
             <div style="padding:22px 24px 26px;display:flex;flex-direction:column;gap:12px;flex:1">
-              <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)">Displacement detection</p>
-              <h3 style="font-family:'Source Serif 4',Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0;color:var(--ink)"><a href="https://doi.org/10.1140/epjds/s13688-025-00572-8" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1px solid transparent" style-hover="color:var(--accent);border-bottom-color:var(--accent)">A novel activity space approach to discover displacement patterns via mobile phone data</a><span style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.08em;background:var(--accent-soft);color:var(--accent);padding:2px 6px;margin-left:8px;vertical-align:2px;font-weight:500">OPEN ACCESS</span></h3>
+              <p style="margin:0;font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)">Displacement detection</p>
+              <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0;color:var(--ink)"><a href="https://doi.org/10.1140/epjds/s13688-025-00572-8" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1px solid transparent" style-hover="color:var(--accent);border-bottom-color:var(--accent)">A novel activity space approach to discover displacement patterns via mobile phone data</a><span style="display:inline-block;font-family:'Space Grotesk',monospace;font-size:9.5px;letter-spacing:0.08em;background:var(--accent-soft);color:var(--accent);padding:2px 6px;margin-left:8px;vertical-align:2px;font-weight:500">OPEN ACCESS</span></h3>
               <p style="margin:0;color:var(--ink2);font-size:15px;line-height:1.62;flex:1;text-wrap:pretty">Rather than tracking single locations, this method models each person's whole activity space and detects when it relocates. Applied to the 2023 Turkiye and Syria earthquakes to identify who was displaced, when, and for how long.</p>
               <p style="margin:0;font-size:13px;color:var(--ink3);line-height:1.55">Aydogdu, B., Danis, D., Bilgili, O., Yildizcan, C., Yagcikli, S. N., Gunes, S., &amp; Salah, A. A. <em>EPJ Data Science</em>, 14, 61.</p>
               <a href="https://doi.org/10.1140/epjds/s13688-025-00572-8" target="_blank" rel="noopener" style="font-size:14px;font-weight:500;color:var(--accent);align-self:flex-start;border-bottom:1px solid color-mix(in oklab,var(--accent) 35%,transparent);padding-bottom:1px" style-hover="border-bottom-color:var(--accent)">Read the paper →</a>
@@ -650,17 +172,17 @@ img{max-width:100%;display:block}
                 <g stroke="var(--line)" stroke-width="1"><path d="M34 40h318M34 76h318M34 112h318M34 148h318"></path></g>
                 <path d="M34 20V162H352" fill="none" stroke="var(--line)" stroke-width="1.4"></path>
                 <path d="M196 24V162" stroke="var(--ink3)" stroke-width="1" stroke-dasharray="3 4"></path>
-                <text x="201" y="34" font-size="10" fill="var(--ink3)" font-family="'IBM Plex Mono',monospace">border opens</text>
+                <text x="201" y="34" font-size="10" fill="var(--ink3)" font-family="'Space Grotesk',monospace">border opens</text>
                 <polyline points="34,148 62,145 90,147 118,143 146,138 174,116 190,74 204,100 232,128 260,141 288,146 316,148 352,149" fill="none" stroke="var(--ink3)" stroke-width="1.8" stroke-dasharray="5 4" stroke-linejoin="round" stroke-linecap="round"></polyline>
                 <polyline points="34,138 62,134 90,136 118,130 146,124 172,92 196,38 212,60 240,98 268,120 296,130 324,134 352,136" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"></polyline>
                 <circle cx="196" cy="38" r="4" fill="var(--accent)" stroke="var(--panel)" stroke-width="2"></circle>
-                <g font-size="10" font-family="'IBM Plex Mono',monospace"><line x1="36" y1="180" x2="56" y2="180" stroke="var(--accent)" stroke-width="2.2"></line><text x="62" y="183" fill="var(--ink2)">mobile phone data</text><line x1="188" y1="180" x2="208" y2="180" stroke="var(--ink3)" stroke-width="1.8" stroke-dasharray="5 4"></line><text x="214" y="183" fill="var(--ink2)">social media</text></g>
+                <g font-size="10" font-family="'Space Grotesk',monospace"><line x1="36" y1="180" x2="56" y2="180" stroke="var(--accent)" stroke-width="2.2"></line><text x="62" y="183" fill="var(--ink2)">mobile phone data</text><line x1="188" y1="180" x2="208" y2="180" stroke="var(--ink3)" stroke-width="1.8" stroke-dasharray="5 4"></line><text x="214" y="183" fill="var(--ink2)">social media</text></g>
               </svg>
-              <p style="margin:10px 0 0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:var(--ink3)">fig. 02 — two independent signals, one event</p>
+              <p style="margin:10px 0 0;font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.04em;color:var(--ink3)">fig. 02 — two independent signals, one event</p>
             </div>
             <div style="padding:22px 24px 26px;display:flex;flex-direction:column;gap:12px;flex:1">
-              <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)">Multi-source measurement</p>
-              <h3 style="font-family:'Source Serif 4',Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0;color:var(--ink)"><a href="https://doi.org/10.1007/s42001-024-00354-8" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1px solid transparent" style-hover="color:var(--accent);border-bottom-color:var(--accent)">Combining Twitter and mobile phone data to observe border-rush: the Turkish-European border opening</a></h3>
+              <p style="margin:0;font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)">Multi-source measurement</p>
+              <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0;color:var(--ink)"><a href="https://doi.org/10.1007/s42001-024-00354-8" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1px solid transparent" style-hover="color:var(--accent);border-bottom-color:var(--accent)">Combining Twitter and mobile phone data to observe border-rush: the Turkish-European border opening</a></h3>
               <p style="margin:0;color:var(--ink2);font-size:15px;line-height:1.62;flex:1;text-wrap:pretty">When the Turkish-European border opened in 2020, two very different data sources both registered the movement. Cross-validating them shows what each one sees, what each one misses, and how they can be read together.</p>
               <p style="margin:0;font-size:13px;color:var(--ink3);line-height:1.55">Arcila-Calderon, C., Aydogdu, B., Bircan, T., Gunduz, B., Ones, O., Salah, A. A., &amp; Sirbu, A. <em>Journal of Computational Social Science</em>, 8(1), 26.</p>
               <a href="https://doi.org/10.1007/s42001-024-00354-8" target="_blank" rel="noopener" style="font-size:14px;font-weight:500;color:var(--accent);align-self:flex-start;border-bottom:1px solid color-mix(in oklab,var(--accent) 35%,transparent);padding-bottom:1px" style-hover="border-bottom-color:var(--accent)">Read the paper →</a>
@@ -675,16 +197,16 @@ img{max-width:100%;display:block}
                   <path d="M74 140 Q186 130 286 100" stroke-width="4"></path><path d="M74 140 Q186 162 286 148" stroke-width="2"></path>
                 </g>
                 <g fill="var(--panel)" stroke="var(--ink)" stroke-width="1.8"><circle cx="74" cy="52" r="7"></circle><circle cx="74" cy="96" r="7"></circle><circle cx="74" cy="140" r="7"></circle><circle cx="286" cy="48" r="7"></circle><circle cx="286" cy="100" r="7"></circle><circle cx="286" cy="148" r="7"></circle></g>
-                <g font-size="10" font-family="'IBM Plex Mono',monospace" fill="var(--ink3)"><text x="30" y="20">sending</text><text x="264" y="20">receiving</text></g>
-                <g font-size="10" font-family="'IBM Plex Mono',monospace" fill="var(--ink3)" text-anchor="end"><text x="60" y="56">A</text><text x="60" y="100">B</text><text x="60" y="144">C</text></g>
-                <g font-size="10" font-family="'IBM Plex Mono',monospace" fill="var(--ink3)"><text x="300" y="52">X</text><text x="300" y="104">Y</text><text x="300" y="152">Z</text></g>
-                <text x="30" y="180" font-size="10" fill="var(--ink3)" font-family="'IBM Plex Mono',monospace">line weight = transfer volume</text>
+                <g font-size="10" font-family="'Space Grotesk',monospace" fill="var(--ink3)"><text x="30" y="20">sending</text><text x="264" y="20">receiving</text></g>
+                <g font-size="10" font-family="'Space Grotesk',monospace" fill="var(--ink3)" text-anchor="end"><text x="60" y="56">A</text><text x="60" y="100">B</text><text x="60" y="144">C</text></g>
+                <g font-size="10" font-family="'Space Grotesk',monospace" fill="var(--ink3)"><text x="300" y="52">X</text><text x="300" y="104">Y</text><text x="300" y="152">Z</text></g>
+                <text x="30" y="180" font-size="10" fill="var(--ink3)" font-family="'Space Grotesk',monospace">line weight = transfer volume</text>
               </svg>
-              <p style="margin:10px 0 0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:var(--ink3)">fig. 03 — airtime top-ups as a real-time signal of diaspora behavior</p>
+              <p style="margin:10px 0 0;font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.04em;color:var(--ink3)">fig. 03 — airtime top-ups as a real-time signal of diaspora behavior</p>
             </div>
             <div style="padding:22px 24px 26px;display:flex;flex-direction:column;gap:12px;flex:1">
-              <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)">Novel data sources</p>
-              <h3 style="font-family:'Source Serif 4',Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0;color:var(--ink)"><a href="https://doi.org/10.1007/s41060-023-00396-7" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1px solid transparent" style-hover="color:var(--accent);border-bottom-color:var(--accent)">Analyzing international airtime top-up transfers for migration and mobility</a></h3>
+              <p style="margin:0;font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)">Novel data sources</p>
+              <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0;color:var(--ink)"><a href="https://doi.org/10.1007/s41060-023-00396-7" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1px solid transparent" style-hover="color:var(--accent);border-bottom-color:var(--accent)">Analyzing international airtime top-up transfers for migration and mobility</a></h3>
               <p style="margin:0;color:var(--ink2);font-size:15px;line-height:1.62;flex:1;text-wrap:pretty">When someone abroad tops up a phone back home, that transaction is a trace of a social tie. Across 220 million transfers, those traces sketch migration corridors that conventional statistics struggle to see.</p>
               <p style="margin:0;font-size:13px;color:var(--ink3);line-height:1.55">Aydogdu, B., Samad, H., Bai, S., Abboud, S., Gorantis, I., &amp; Salah, A. A. <em>International Journal of Data Science and Analytics</em>, 19, 319-336.</p>
               <a href="https://doi.org/10.1007/s41060-023-00396-7" target="_blank" rel="noopener" style="font-size:14px;font-weight:500;color:var(--accent);align-self:flex-start;border-bottom:1px solid color-mix(in oklab,var(--accent) 35%,transparent);padding-bottom:1px" style-hover="border-bottom-color:var(--accent)">Read the paper →</a>
@@ -692,7 +214,7 @@ img{max-width:100%;display:block}
           </article>
           <article style="background:var(--panel);display:flex;flex-direction:column;transition:background .2s ease" style-hover="background:var(--paper)">
             <div style="padding:22px 24px 12px;border-bottom:1px solid var(--line2)">
-              <svg viewBox="0 0 360 200" role="img" aria-label="Pipeline from mobile data acquisition through features and analysis to ex-ante and ex-post outputs" style="width:100%;height:auto;display:block" font-family="'IBM Plex Mono',monospace">
+              <svg viewBox="0 0 360 200" role="img" aria-label="Pipeline from mobile data acquisition through features and analysis to ex-ante and ex-post outputs" style="width:100%;height:auto;display:block" font-family="'Space Grotesk',monospace">
                 <defs>
                   <marker id="ahD" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 1 L9 5 L0 9 z" fill="var(--ink2)"></path></marker>
                 </defs>
@@ -722,11 +244,11 @@ img{max-width:100%;display:block}
                   <text x="304" y="150" font-size="10.5" fill="var(--accent)">Ex-post</text><text x="304" y="162" font-size="8.5" fill="var(--ink3)">assessment</text>
                 </g>
               </svg>
-              <p style="margin:10px 0 0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:var(--ink3)">fig. 04 — from raw signals to anticipatory and retrospective analysis</p>
+              <p style="margin:10px 0 0;font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.04em;color:var(--ink3)">fig. 04 — from raw signals to anticipatory and retrospective analysis</p>
             </div>
             <div style="padding:22px 24px 26px;display:flex;flex-direction:column;gap:12px;flex:1">
-              <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)">Policy and practice</p>
-              <h3 style="font-family:'Source Serif 4',Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0;color:var(--ink)"><a href="https://doi.org/10.1017/dap.2024.94" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1px solid transparent" style-hover="color:var(--accent);border-bottom-color:var(--accent)">Mobile phone data for anticipating displacements: practices, opportunities, and challenges</a><span style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.08em;background:var(--accent-soft);color:var(--accent);padding:2px 6px;margin-left:8px;vertical-align:2px;font-weight:500">OPEN ACCESS</span></h3>
+              <p style="margin:0;font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)">Policy and practice</p>
+              <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0;color:var(--ink)"><a href="https://doi.org/10.1017/dap.2024.94" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1px solid transparent" style-hover="color:var(--accent);border-bottom-color:var(--accent)">Mobile phone data for anticipating displacements: practices, opportunities, and challenges</a><span style="display:inline-block;font-family:'Space Grotesk',monospace;font-size:9.5px;letter-spacing:0.08em;background:var(--accent-soft);color:var(--accent);padding:2px 6px;margin-left:8px;vertical-align:2px;font-weight:500">OPEN ACCESS</span></h3>
               <p style="margin:0;color:var(--ink2);font-size:15px;line-height:1.62;flex:1;text-wrap:pretty">An honest account of where this data helps and where it does not. What operational value early signals actually carry, and what the access, privacy and methodological barriers are to using them responsibly.</p>
               <p style="margin:0;font-size:13px;color:var(--ink3);line-height:1.55">Aydogdu, B., Bilgili, O., Gunes, S., &amp; Salah, A. A. <em>Data &amp; Policy</em>, 7, e5.</p>
               <a href="https://doi.org/10.1017/dap.2024.94" target="_blank" rel="noopener" style="font-size:14px;font-weight:500;color:var(--accent);align-self:flex-start;border-bottom:1px solid color-mix(in oklab,var(--accent) 35%,transparent);padding-bottom:1px" style-hover="border-bottom-color:var(--accent)">Read the paper →</a>
@@ -736,14 +258,14 @@ img{max-width:100%;display:block}
         </div>
 
         <div style="display:flex;flex-direction:column;gap:2px">
-          <h3 style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">PhD thesis</h3>
+          <h3 style="font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">PhD thesis</h3>
           <div class="cvcard" style="display:grid;grid-template-columns:200px minmax(0,1fr);gap:32px;align-items:start;border:1px solid var(--line);background:var(--panel);padding:24px;margin-top:8px;max-width:820px">
             <a href="https://doi.org/10.33540/3246" target="_blank" rel="noopener" aria-label="Open the PhD thesis" style="display:block;border:1px solid var(--line);background:#fff;line-height:0;transition:transform .2s ease,box-shadow .2s ease" style-hover="transform:translateY(-3px);box-shadow:0 12px 28px color-mix(in oklab,var(--ink) 18%,transparent)">
               <img src="pictures/thesis.png" alt="Cover of the PhD thesis, Utrecht University" loading="lazy" style="width:100%;height:auto;display:block">
             </a>
             <div style="display:flex;flex-direction:column;gap:12px">
-              <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)">Doctoral thesis · Utrecht University</p>
-              <h3 style="font-family:'Source Serif 4',Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0;color:var(--ink)"><a href="https://doi.org/10.33540/3246" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1px solid transparent" style-hover="color:var(--accent);border-bottom-color:var(--accent)">Mobile Phone Data for Crisis-Induced Migration and Mobility</a><span style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.08em;background:var(--accent-soft);color:var(--accent);padding:2px 6px;margin-left:8px;vertical-align:2px;font-weight:500">OPEN ACCESS</span></h3>
+              <p style="margin:0;font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)">Doctoral thesis · Utrecht University</p>
+              <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0;color:var(--ink)"><a href="https://doi.org/10.33540/3246" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1px solid transparent" style-hover="color:var(--accent);border-bottom-color:var(--accent)">Mobile Phone Data for Crisis-Induced Migration and Mobility</a><span style="display:inline-block;font-family:'Space Grotesk',monospace;font-size:9.5px;letter-spacing:0.08em;background:var(--accent-soft);color:var(--accent);padding:2px 6px;margin-left:8px;vertical-align:2px;font-weight:500">OPEN ACCESS</span></h3>
               <p style="margin:0;color:var(--ink2);font-size:15px;line-height:1.62;text-wrap:pretty">My doctoral thesis: methods for measuring and analyzing crisis-induced migration and mobility from mobile phone data, developed and tested across earthquakes, sudden border movements and diaspora transfers.</p>
               <p style="margin:0;font-size:13px;color:var(--ink3);line-height:1.55">Doctoral thesis, <em>Utrecht University</em>, 2026.</p>
               <a href="https://doi.org/10.33540/3246" target="_blank" rel="noopener" style="font-size:14px;font-weight:500;color:var(--accent);align-self:flex-start;border-bottom:1px solid color-mix(in oklab,var(--accent) 35%,transparent);padding-bottom:1px" style-hover="border-bottom-color:var(--accent)">Read the thesis →</a>
@@ -752,9 +274,9 @@ img{max-width:100%;display:block}
         </div>
 
         <div style="display:flex;flex-direction:column;gap:2px">
-          <h3 style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">Book chapters</h3>
+          <h3 style="font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">Book chapters</h3>
           <div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line2)">
-            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2022</span>
+            <span style="font-family:'Space Grotesk',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2022</span>
             <div style="display:flex;flex-direction:column;gap:5px">
               <p style="margin:0;font-size:16px;line-height:1.5;font-weight:500;color:var(--ink)"><a href="https://doi.org/10.1002/9781119815075.ch20" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1px solid transparent" style-hover="color:var(--accent);border-bottom-color:var(--accent)">Machine Learning for Urban Computing</a></p>
               <p style="margin:0;font-size:13.5px;color:var(--ink3);line-height:1.55">Aydogdu, B., &amp; Salah, A. A. In <em>Machine Learning and the City: Applications in Architecture and Urban Design</em>, 249-262.</p>
@@ -763,30 +285,30 @@ img{max-width:100%;display:block}
         </div>
 
         <div style="display:flex;flex-direction:column;gap:2px">
-          <h3 style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">Conference proceedings</h3>
+          <h3 style="font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">Conference proceedings</h3>
           <div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line2)">
-            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2025</span>
+            <span style="font-family:'Space Grotesk',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2025</span>
             <div style="display:flex;flex-direction:column;gap:5px">
               <p style="margin:0;font-size:16px;line-height:1.5;font-weight:500;color:var(--ink)"><a href="https://doi.org/10.1109/SIU66497.2025.11111955" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1px solid transparent" style-hover="color:var(--accent);border-bottom-color:var(--accent)">Prediction of internal migration after an earthquake with call detail records</a></p>
               <p style="margin:0;font-size:13.5px;color:var(--ink3);line-height:1.55">Hu, J., Aydogdu, B., Gunes, S., Yagcikli, S. N., &amp; Salah, A. A. <em>Proc. 33rd IEEE SIU</em>.</p>
             </div>
           </div>
           <div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line2)">
-            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2023</span>
+            <span style="font-family:'Space Grotesk',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2023</span>
             <div style="display:flex;flex-direction:column;gap:5px">
               <p style="margin:0;font-size:16px;line-height:1.5;font-weight:500;color:var(--ink)">Individual level drivers of seasonal agricultural mobility in Turkey</p>
               <p style="margin:0;font-size:13.5px;color:var(--ink3);line-height:1.55">Aydogdu, B., Natarajan, D., Gunes, S., &amp; Salah, A. A. <em>NetMob 2023 Book of Abstracts</em>, Madrid.</p>
             </div>
           </div>
           <div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line2)">
-            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2023</span>
+            <span style="font-family:'Space Grotesk',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2023</span>
             <div style="display:flex;flex-direction:column;gap:5px">
               <p style="margin:0;font-size:16px;line-height:1.5;font-weight:500;color:var(--ink)"><a href="https://doi.org/10.1109/SIU59756.2023.10223985" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1px solid transparent" style-hover="color:var(--accent);border-bottom-color:var(--accent)">Fine-grained mapping of migrants in Istanbul using satellite imaging and mobile phone data</a></p>
               <p style="margin:0;font-size:13.5px;color:var(--ink3);line-height:1.55">Aydogdu, B., Balcik, C., Gunes, S., Momeni, R., &amp; Salah, A. A. <em>Proc. 31st IEEE SIU</em>.</p>
             </div>
           </div>
           <div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line2)">
-            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2022</span>
+            <span style="font-family:'Space Grotesk',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2022</span>
             <div style="display:flex;flex-direction:column;gap:5px">
               <p style="margin:0;font-size:16px;line-height:1.5;font-weight:500;color:var(--ink)"><a href="https://doi.org/10.1109/SIU55565.2022.9864756" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1px solid transparent" style-hover="color:var(--accent);border-bottom-color:var(--accent)">Temporal and spatial analysis of indicators on segregation of Syrian refugees in Turkey with mobile phone data</a></p>
               <p style="margin:0;font-size:13.5px;color:var(--ink3);line-height:1.55">Aydogdu, B., Ahat, B., Salah, A. A., &amp; Bircan, T. <em>Proc. 30th IEEE SIU</em>.</p>
@@ -795,16 +317,16 @@ img{max-width:100%;display:block}
         </div>
 
         <div style="display:flex;flex-direction:column;gap:2px">
-          <h3 style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">Policy reports</h3>
+          <h3 style="font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">Policy reports</h3>
           <div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line2)">
-            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2023</span>
+            <span style="font-family:'Space Grotesk',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2023</span>
             <div style="display:flex;flex-direction:column;gap:5px">
               <p style="margin:0;font-size:16px;line-height:1.5;font-weight:500;color:var(--ink)">White paper on policy implications of using mobile phone data for migration</p>
               <p style="margin:0;font-size:13.5px;color:var(--ink3);line-height:1.55">Aydogdu, B., Yar, A. W. A., Bircan, T., &amp; Salah, A. A. <em>HumMingBird</em> D6.5, H2020 grant 870661.</p>
             </div>
           </div>
           <div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line2)">
-            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2022</span>
+            <span style="font-family:'Space Grotesk',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2022</span>
             <div style="display:flex;flex-direction:column;gap:5px">
               <p style="margin:0;font-size:16px;line-height:1.5;font-weight:500;color:var(--ink)">HumMingBird interim report on migration and mobility indicators developed with mobile phone data</p>
               <p style="margin:0;font-size:13.5px;color:var(--ink3);line-height:1.55">Aydogdu, B., Momeni, R., Subhi, G., Balcik, C., Bircan, T., &amp; Salah, A. A. <em>HumMingBird</em> D6.3.</p>
@@ -816,27 +338,27 @@ img{max-width:100%;display:block}
 
     <section id="tools" style="padding:80px 0;border-bottom:1px solid var(--line);scroll-margin-top:88px;display:grid;grid-template-columns:120px minmax(0,1fr);gap:32px" data-reveal="1">
       <div style="display:flex;flex-direction:column;gap:8px">
-        <h2 style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;margin:0;color:var(--ink)">Tools &amp; Resources</h2>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;margin:0;color:var(--ink)">Tools &amp; Resources</h2>
       </div>
       <div style="display:flex;flex-direction:column;gap:20px;max-width:820px">
         <p style="margin:0;font-size:18px;line-height:1.68;color:var(--ink2);max-width:640px">Open-source software and datasets from my research, packaged for reuse.</p>
         <div style="border:1px solid var(--line);background:var(--panel);padding:26px 28px;display:flex;flex-direction:column;gap:20px">
           <div style="display:flex;flex-direction:column;gap:11px">
-            <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)">Open source · Python · PySpark</p>
-            <h3 style="font-family:'Source Serif 4',Georgia,serif;font-weight:500;font-size:22px;line-height:1.25;letter-spacing:-0.01em;margin:0;color:var(--ink)">ASA — displacement detection</h3>
+            <p style="margin:0;font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)">Open source · Python · PySpark</p>
+            <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:22px;line-height:1.25;letter-spacing:-0.01em;margin:0;color:var(--ink)">ASA — displacement detection</h3>
             <p style="margin:0;color:var(--ink2);font-size:15px;line-height:1.65;text-wrap:pretty">The Activity Space Approach (ASA) measures disaster-induced displacement from mobile phone data by modelling each person's whole activity space — the familiar area they routinely move through — rather than a single home location. Displacement is detected as a sustained relocation of that space away from where it sat before the shock, which also recovers when a person left, where they went, and how long they stayed away. The library is data-agnostic and runs distributed on PySpark, and ships with the study's replication scripts and privacy-preserving indicator datasets aggregated to the H3 hexagonal grid. It was developed and validated on the 2023 Türkiye–Syria earthquakes across the ten most-affected provinces.</p>
             <a href="https://doi.org/10.1140/epjds/s13688-025-00572-8" target="_blank" rel="noopener" style="font-size:14px;font-weight:500;color:var(--accent);align-self:flex-start;border-bottom:1px solid color-mix(in oklab,var(--accent) 35%,transparent);padding-bottom:1px" style-hover="border-bottom-color:var(--accent)">Read the paper →</a>
           </div>
           <div style="display:flex;flex-direction:column;gap:8px">
-            <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.13em;text-transform:uppercase;color:var(--ink3)">Get it</p>
-            <pre style="margin:0;background:var(--paper);border:1px solid var(--line);border-radius:2px;padding:14px 16px;overflow-x:auto;white-space:pre-wrap;overflow-wrap:anywhere;font-family:'IBM Plex Mono',monospace;font-size:12.5px;line-height:1.7;color:var(--ink2)"><code>git clone https://github.com/bilgecag/asa_displacemet_detection.git
+            <p style="margin:0;font-family:'Space Grotesk',monospace;font-size:10px;letter-spacing:0.13em;text-transform:uppercase;color:var(--ink3)">Get it</p>
+            <pre style="margin:0;background:var(--paper);border:1px solid var(--line);border-radius:2px;padding:14px 16px;overflow-x:auto;white-space:pre-wrap;overflow-wrap:anywhere;font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:12.5px;line-height:1.7;color:var(--ink2)"><code>git clone https://github.com/bilgecag/asa_displacemet_detection.git
 cd asa_displacemet_detection
 pip install -r requirements.txt</code></pre>
             <p style="margin:0;font-size:12.5px;color:var(--ink3);line-height:1.5">Installed from source (Python 3 + PySpark); not yet on PyPI.</p>
           </div>
           <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding-top:4px">
             <a href="https://github.com/bilgecag/asa_displacemet_detection" target="_blank" rel="noopener" aria-label="View the code on GitHub" title="GitHub" style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--line);background:var(--panel);color:var(--ink2);transition:all .15s ease" style-hover="border-color:var(--accent);color:var(--accent)"><svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg></a>
-            <a href="data/h3_indicator_map.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;padding:0 16px;height:44px;border:1px solid var(--line);background:var(--panel);font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.09em;text-transform:uppercase;color:var(--ink2);transition:all .15s ease" style-hover="border-color:var(--accent);color:var(--accent)"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 22 8.5 12 15 2 8.5 12 2"></polygon><polyline points="2 15.5 12 22 22 15.5"></polyline></svg>Indicators</a>
+            <a href="data/h3_indicator_map.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;padding:0 16px;height:44px;border:1px solid var(--line);background:var(--panel);font-family:'Space Grotesk',monospace;font-size:11.5px;letter-spacing:0.09em;text-transform:uppercase;color:var(--ink2);transition:all .15s ease" style-hover="border-color:var(--accent);color:var(--accent)"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 22 8.5 12 15 2 8.5 12 2"></polygon><polyline points="2 15.5 12 22 22 15.5"></polyline></svg>Indicators</a>
           </div>
         </div>
       </div>
@@ -844,22 +366,22 @@ pip install -r requirements.txt</code></pre>
 
     <section id="activities" style="padding:80px 0;border-bottom:1px solid var(--line);scroll-margin-top:88px;display:grid;grid-template-columns:120px minmax(0,1fr);gap:32px" data-reveal="1">
       <div style="display:flex;flex-direction:column;gap:8px">
-        <h2 style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;margin:0;color:var(--ink)">Activities</h2>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;margin:0;color:var(--ink)">Activities</h2>
       </div>
       <div style="display:flex;flex-direction:column;gap:44px;max-width:820px">
         <p style="margin:0;font-size:18px;line-height:1.68;color:var(--ink2);max-width:640px">Invited talks, conference presentations and media coverage.</p>
 
         <div id="invited-talks" style="display:flex;flex-direction:column;gap:2px;scroll-margin-top:100px">
-          <h3 style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">Invited talks</h3>
+          <h3 style="font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">Invited talks</h3>
           <div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line2)">
-            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2023</span>
+            <span style="font-family:'Space Grotesk',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2023</span>
             <div style="display:flex;flex-direction:column;gap:5px">
               <p style="margin:0;font-size:16px;line-height:1.5;font-weight:500;color:var(--ink)">Diaspora sensing through mobile money: impact of disasters, crises and holidays on migrant transfers</p>
               <p style="margin:0;font-size:13.5px;color:var(--ink3);line-height:1.55">PhD Seminar, CIRED (Centre International de Recherche sur l'Environnement et le Développement). 22 November 2023.</p>
             </div>
           </div>
           <div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line2)">
-            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2023</span>
+            <span style="font-family:'Space Grotesk',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2023</span>
             <div style="display:flex;flex-direction:column;gap:5px">
               <p style="margin:0;font-size:16px;line-height:1.5;font-weight:500;color:var(--ink)">Mobile phone based indicators of migration and mobility</p>
               <p style="margin:0;font-size:13.5px;color:var(--ink3);line-height:1.55">Pitch and Mix, WODC (Scientific Research and Documentation Centre, Kennislijn Asiel en Migratie), the Netherlands.</p>
@@ -868,23 +390,23 @@ pip install -r requirements.txt</code></pre>
         </div>
 
         <div id="conference-presentations" style="display:flex;flex-direction:column;gap:2px;scroll-margin-top:100px">
-          <h3 style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">Conference presentations</h3>
+          <h3 style="font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">Conference presentations</h3>
           <div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line2)">
-            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2025</span>
+            <span style="font-family:'Space Grotesk',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2025</span>
             <div style="display:flex;flex-direction:column;gap:5px">
               <p style="margin:0;font-size:16px;line-height:1.5;font-weight:500;color:var(--ink)">Introducing spatio-temporal graph networks to displacement predictions in the context of the 2023 Türkiye–Syria earthquake</p>
               <p style="margin:0;font-size:13.5px;color:var(--ink3);line-height:1.55">NetMob 2025.</p>
             </div>
           </div>
           <div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line2)">
-            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2024</span>
+            <span style="font-family:'Space Grotesk',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2024</span>
             <div style="display:flex;flex-direction:column;gap:5px">
               <p style="margin:0;font-size:16px;line-height:1.5;font-weight:500;color:var(--ink)">The role of social connections in crisis-driven migration and mobility behaviour</p>
               <p style="margin:0;font-size:13.5px;color:var(--ink3);line-height:1.55">Mobile Tartu 2024, Tartu, Estonia.</p>
             </div>
           </div>
           <div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line2)">
-            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2024</span>
+            <span style="font-family:'Space Grotesk',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2024</span>
             <div style="display:flex;flex-direction:column;gap:5px">
               <p style="margin:0;font-size:16px;line-height:1.5;font-weight:500;color:var(--ink)">Mobile phone data for anticipating displacements: practices, opportunities, and challenges</p>
               <p style="margin:0;font-size:13.5px;color:var(--ink3);line-height:1.55">Data for Policy 2024, London, United Kingdom.</p>
@@ -893,9 +415,9 @@ pip install -r requirements.txt</code></pre>
         </div>
 
         <div id="trainings" style="display:flex;flex-direction:column;gap:2px;scroll-margin-top:100px">
-          <h3 style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">Trainings</h3>
+          <h3 style="font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">Trainings</h3>
           <div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line2)">
-            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2023–24</span>
+            <span style="font-family:'Space Grotesk',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2023–24</span>
             <div style="display:flex;flex-direction:column;gap:5px">
               <p style="margin:0;font-size:16px;line-height:1.5;font-weight:500;color:var(--ink)">Capacity building at the National Statistical Office of Mongolia</p>
               <p style="margin:0;font-size:13.5px;color:var(--ink3);line-height:1.55">Delivered workshops for Mongolia&rsquo;s National Statistics Office on using mobile phone data to track internal population movements and strengthen official statistics. <a href="https://www.uu.nl/en/news/capacity-building-in-mongolia" target="_blank" rel="noopener" style="color:var(--accent);border-bottom:1px solid color-mix(in oklab,var(--accent) 35%,transparent)">Details at Utrecht University &rarr;</a></p>
@@ -904,9 +426,9 @@ pip install -r requirements.txt</code></pre>
         </div>
 
         <div id="coverage" style="display:flex;flex-direction:column;gap:2px;scroll-margin-top:100px">
-          <h3 style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">Coverage</h3>
+          <h3 style="font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--ink);color:var(--ink)">Coverage</h3>
           <div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line2)">
-            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2026</span>
+            <span style="font-family:'Space Grotesk',monospace;font-size:12.5px;color:var(--ink3);padding-top:3px">2026</span>
             <div style="display:flex;flex-direction:column;gap:5px">
               <p style="margin:0;font-size:16px;line-height:1.5;font-weight:500;color:var(--ink)">Mobile Data for Humanitarian Action: Pathways to Sustained and Responsible Use</p>
               <p style="margin:0;font-size:13.5px;color:var(--ink3);line-height:1.55">GSMA report. Interviewed with Albert Ali Salah; our work on mobile phone data for displacement is featured in the report.</p>
@@ -918,24 +440,24 @@ pip install -r requirements.txt</code></pre>
 
     <section id="contact" style="padding:80px 0 88px;scroll-margin-top:88px;display:grid;grid-template-columns:120px minmax(0,1fr);gap:32px" data-reveal="1">
       <div style="display:flex;flex-direction:column;gap:8px">
-        <h2 style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;margin:0;color:var(--ink)">Get in touch</h2>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;margin:0;color:var(--ink)">Get in touch</h2>
       </div>
       <div style="display:flex;flex-direction:column;gap:28px;align-items:flex-start">
         <p style="margin:0;max-width:640px;font-size:18px;line-height:1.68;color:var(--ink2);text-wrap:pretty">Open to collaborations, consulting, speaking and training on using mobile phone data for population statistics, and for anticipating and analyzing migration and mobility. Email is the surest way to reach me.</p>
-        <a href="mailto:bilgecagaydogdu@gmail.com" style="font-family:'Source Serif 4',Georgia,serif;font-size:clamp(24px,3.4vw,36px);color:var(--ink);border-bottom:2px solid var(--accent);padding-bottom:4px;word-break:break-all;transition:color .15s ease" style-hover="color:var(--accent)">bilgecagaydogdu@gmail.com</a>
+        <a href="mailto:bilgecagaydogdu@gmail.com" style="font-family:'Fraunces',Georgia,serif;font-size:clamp(24px,3.4vw,36px);color:var(--ink);border-bottom:2px solid var(--accent);padding-bottom:4px;word-break:break-all;transition:color .15s ease" style-hover="color:var(--accent)">bilgecagaydogdu@gmail.com</a>
         <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <a href="https://www.linkedin.com/in/bilgecag-aydogdu/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:9px 15px;border:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.09em;text-transform:uppercase;color:var(--ink2);background:var(--panel);transition:all .15s ease" style-hover="border-color:var(--accent);color:var(--accent)">LinkedIn</a>
-          <a href="https://github.com/bilgecag" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:9px 15px;border:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.09em;text-transform:uppercase;color:var(--ink2);background:var(--panel);transition:all .15s ease" style-hover="border-color:var(--accent);color:var(--accent)">GitHub</a>
-          <a href="https://orcid.org/0000-0003-4619-6806" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:9px 15px;border:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.09em;text-transform:uppercase;color:var(--ink2);background:var(--panel);transition:all .15s ease" style-hover="border-color:var(--accent);color:var(--accent)">ORCID</a>
-          <a href="https://scholar.google.com/citations?hl=en&amp;user=JjLtzGYAAAAJ" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:9px 15px;border:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.09em;text-transform:uppercase;color:var(--ink2);background:var(--panel);transition:all .15s ease" style-hover="border-color:var(--accent);color:var(--accent)">Google Scholar</a>
-          <a href="https://www.researchgate.net/profile/Bilgecag-Aydogdu" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:9px 15px;border:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.09em;text-transform:uppercase;color:var(--ink2);background:var(--panel);transition:all .15s ease" style-hover="border-color:var(--accent);color:var(--accent)">ResearchGate</a>
+          <a href="https://www.linkedin.com/in/bilgecag-aydogdu/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:9px 15px;border:1px solid var(--line);font-family:'Space Grotesk',monospace;font-size:11.5px;letter-spacing:0.09em;text-transform:uppercase;color:var(--ink2);background:var(--panel);transition:all .15s ease" style-hover="border-color:var(--accent);color:var(--accent)">LinkedIn</a>
+          <a href="https://github.com/bilgecag" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:9px 15px;border:1px solid var(--line);font-family:'Space Grotesk',monospace;font-size:11.5px;letter-spacing:0.09em;text-transform:uppercase;color:var(--ink2);background:var(--panel);transition:all .15s ease" style-hover="border-color:var(--accent);color:var(--accent)">GitHub</a>
+          <a href="https://orcid.org/0000-0003-4619-6806" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:9px 15px;border:1px solid var(--line);font-family:'Space Grotesk',monospace;font-size:11.5px;letter-spacing:0.09em;text-transform:uppercase;color:var(--ink2);background:var(--panel);transition:all .15s ease" style-hover="border-color:var(--accent);color:var(--accent)">ORCID</a>
+          <a href="https://scholar.google.com/citations?hl=en&amp;user=JjLtzGYAAAAJ" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:9px 15px;border:1px solid var(--line);font-family:'Space Grotesk',monospace;font-size:11.5px;letter-spacing:0.09em;text-transform:uppercase;color:var(--ink2);background:var(--panel);transition:all .15s ease" style-hover="border-color:var(--accent);color:var(--accent)">Google Scholar</a>
+          <a href="https://www.researchgate.net/profile/Bilgecag-Aydogdu" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:9px 15px;border:1px solid var(--line);font-family:'Space Grotesk',monospace;font-size:11.5px;letter-spacing:0.09em;text-transform:uppercase;color:var(--ink2);background:var(--panel);transition:all .15s ease" style-hover="border-color:var(--accent);color:var(--accent)">ResearchGate</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer style="max-width:1120px;margin:0 auto;padding:22px 40px 56px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.09em;text-transform:uppercase;color:var(--ink3)">
+  <footer style="max-width:1120px;margin:0 auto;padding:22px 40px 56px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:'Space Grotesk',monospace;font-size:11px;letter-spacing:0.09em;text-transform:uppercase;color:var(--ink3)">
     <p style="margin:0">© <span id="yr">2026</span> Bilgecag Aydogdu</p>
     <p style="margin:0">Paris, France</p>
   </footer>
