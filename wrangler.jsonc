@@ -1,11 +1,22 @@
 {
-  // Static-only Worker: no server code, Cloudflare just serves ./public
+  // Static site + one API route (/api/contact) that saves form submissions to D1.
+  // Static assets in ./public are served automatically; the Worker in src/index.js
+  // runs only for requests that don't match a file (e.g. the API route).
   "name": "bilgecagaydogdu-com",
+  "main": "src/index.js",
   "compatibility_date": "2026-07-25",
   "assets": {
     "directory": "./public",
+    "binding": "ASSETS",
     "not_found_handling": "404-page"
   },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "bilgecagaydogdu-contact",
+      "database_id": "0f15c93d-e20a-4171-92cd-d9adc6159583"
+    }
+  ],
   "routes": [
     { "pattern": "bilgecagaydogdu.com", "custom_domain": true },
     { "pattern": "www.bilgecagaydogdu.com", "custom_domain": true }
