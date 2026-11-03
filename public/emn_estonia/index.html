@@ -336,6 +336,12 @@ canvas{display:block}
 
 /* data gaps: visual sub-slides */
 .gx{flex:1;display:flex;flex-direction:column;gap:16px;min-height:0}
+/* slide 9 (s4b): enlarge + center the diagram after trimming the source line */
+#s4b .gxs{justify-content:center;gap:20px}
+#s4b .gx{margin-left:-100px;margin-right:-100px}
+#s4b .gxh h3{font-size:50px}
+#s4b .gxh p{font-size:27px}
+#s4b .gxpipe{margin-bottom:8px}
 .gxpipe{display:flex;gap:8px}
 .gxp{flex:1;min-width:0;display:flex;align-items:center;gap:9px;border:2px solid var(--line);background:var(--slide);border-radius:999px;padding:6px 12px 6px 6px;font-size:18px;color:var(--muted);cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:background .3s,border-color .3s,color .3s}
 .gxp b{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--line);color:var(--ink2);font-size:15px;flex:none}
