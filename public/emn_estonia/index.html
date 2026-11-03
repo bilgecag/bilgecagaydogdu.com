@@ -91,6 +91,12 @@ canvas{display:block}
 .s-title .who span{font-size:30px;color:var(--ink2)}
 .s-title .where{font-size:24px;color:var(--muted)}
 .s-title .logo{position:absolute;left:120px;bottom:56px;width:240px;height:auto;z-index:2}
+.s-title .qrjoin{position:absolute;right:120px;top:172px;z-index:3;display:flex;flex-direction:column;align-items:center;gap:22px;width:360px}
+.s-title .qrbox{background:#fff;padding:26px;border-radius:20px;box-shadow:0 14px 48px rgba(0,0,0,.16);width:324px;height:324px;box-sizing:content-box}
+.s-title .qrbox .qrsvg{width:100%;height:100%;display:block;color:#131714}
+.s-title .qrcap{text-align:center;display:flex;flex-direction:column;gap:6px}
+.s-title .qrcap b{font-size:27px;color:var(--ink);font-weight:600}
+.s-title .qrcap span{font-size:20px;color:var(--muted);font-family:var(--font);letter-spacing:.01em}
 
 /* slide 2 */
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:56px;flex:1}
@@ -171,6 +177,8 @@ canvas{display:block}
 .refs{list-style:none;margin:20px 0 0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:23px;color:var(--ink2)}
 .refs i{color:var(--muted)}
 .s-end .logo{position:absolute;right:120px;bottom:86px;width:260px;z-index:2}
+.s-end .cta{font-size:30px;line-height:1.42;color:var(--ink);max-width:1120px;background:var(--blue-soft);border-left:7px solid var(--blue);padding:26px 32px;border-radius:4px}
+.s-end .cta a{color:var(--blue);font-weight:600;text-decoration:underline;text-underline-offset:3px}
 
 
 /* problem slides (text only) */
@@ -451,6 +459,10 @@ body.idle .nav:hover{opacity:1}
     <div class="who"><b>Bilgeçağ Aydoğdu</b><span>Data Scientist, Positium</span></div>
     <div class="where">EMN Luxembourg &amp; EMN Estonia · Estonian Statehood House, Tallinn · 4 November 2026</div>
   </div>
+  <div class="qrjoin">
+    <div class="qrbox"><svg class="qrsvg" viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" role="img" aria-label="QR code linking to bilgecagaydogdu.com/emn_estonia"><path d="M0 0h7v1h-7zM8 0h2v1h-2zM12 0h2v1h-2zM16 0h1v1h-1zM19 0h2v1h-2zM22 0h7v1h-7zM0 1h1v1h-1zM6 1h1v1h-1zM8 1h1v1h-1zM10 1h4v1h-4zM16 1h3v1h-3zM20 1h1v1h-1zM22 1h1v1h-1zM28 1h1v1h-1zM0 2h1v1h-1zM2 2h3v1h-3zM6 2h1v1h-1zM11 2h1v1h-1zM13 2h1v1h-1zM15 2h1v1h-1zM18 2h3v1h-3zM22 2h1v1h-1zM24 2h3v1h-3zM28 2h1v1h-1zM0 3h1v1h-1zM2 3h3v1h-3zM6 3h1v1h-1zM8 3h2v1h-2zM11 3h1v1h-1zM13 3h2v1h-2zM17 3h2v1h-2zM22 3h1v1h-1zM24 3h3v1h-3zM28 3h1v1h-1zM0 4h1v1h-1zM2 4h3v1h-3zM6 4h1v1h-1zM9 4h3v1h-3zM13 4h4v1h-4zM19 4h1v1h-1zM22 4h1v1h-1zM24 4h3v1h-3zM28 4h1v1h-1zM0 5h1v1h-1zM6 5h1v1h-1zM10 5h1v1h-1zM12 5h2v1h-2zM16 5h5v1h-5zM22 5h1v1h-1zM28 5h1v1h-1zM0 6h7v1h-7zM8 6h1v1h-1zM10 6h1v1h-1zM12 6h1v1h-1zM14 6h1v1h-1zM16 6h1v1h-1zM18 6h1v1h-1zM20 6h1v1h-1zM22 6h7v1h-7zM8 7h2v1h-2zM11 7h1v1h-1zM16 7h2v1h-2zM19 7h1v1h-1zM0 8h1v1h-1zM2 8h2v1h-2zM5 8h3v1h-3zM9 8h2v1h-2zM12 8h1v1h-1zM14 8h1v1h-1zM17 8h3v1h-3zM22 8h1v1h-1zM25 8h1v1h-1zM27 8h2v1h-2zM1 9h2v1h-2zM4 9h1v1h-1zM8 9h1v1h-1zM11 9h1v1h-1zM16 9h1v1h-1zM18 9h7v1h-7zM28 9h1v1h-1zM0 10h3v1h-3zM5 10h3v1h-3zM11 10h1v1h-1zM14 10h1v1h-1zM16 10h1v1h-1zM21 10h1v1h-1zM24 10h1v1h-1zM26 10h2v1h-2zM3 11h1v1h-1zM5 11h1v1h-1zM7 11h1v1h-1zM9 11h3v1h-3zM13 11h4v1h-4zM18 11h1v1h-1zM20 11h4v1h-4zM28 11h1v1h-1zM4 12h3v1h-3zM8 12h1v1h-1zM11 12h2v1h-2zM15 12h3v1h-3zM19 12h1v1h-1zM25 12h2v1h-2zM2 13h2v1h-2zM5 13h1v1h-1zM7 13h1v1h-1zM9 13h1v1h-1zM12 13h1v1h-1zM14 13h3v1h-3zM19 13h1v1h-1zM22 13h1v1h-1zM26 13h3v1h-3zM0 14h1v1h-1zM4 14h1v1h-1zM6 14h2v1h-2zM9 14h1v1h-1zM11 14h3v1h-3zM17 14h3v1h-3zM22 14h1v1h-1zM26 14h3v1h-3zM2 15h2v1h-2zM7 15h1v1h-1zM9 15h1v1h-1zM11 15h2v1h-2zM15 15h2v1h-2zM20 15h1v1h-1zM22 15h2v1h-2zM27 15h1v1h-1zM1 16h2v1h-2zM6 16h2v1h-2zM14 16h1v1h-1zM18 16h1v1h-1zM20 16h2v1h-2zM23 16h3v1h-3zM27 16h1v1h-1zM1 17h1v1h-1zM3 17h1v1h-1zM8 17h2v1h-2zM12 17h1v1h-1zM15 17h1v1h-1zM17 17h1v1h-1zM20 17h1v1h-1zM23 17h1v1h-1zM25 17h3v1h-3zM0 18h1v1h-1zM2 18h2v1h-2zM6 18h4v1h-4zM11 18h6v1h-6zM20 18h2v1h-2zM23 18h2v1h-2zM26 18h1v1h-1zM3 19h1v1h-1zM5 19h1v1h-1zM9 19h1v1h-1zM11 19h8v1h-8zM20 19h2v1h-2zM23 19h2v1h-2zM26 19h1v1h-1zM1 20h3v1h-3zM5 20h2v1h-2zM8 20h2v1h-2zM11 20h1v1h-1zM13 20h3v1h-3zM17 20h1v1h-1zM20 20h7v1h-7zM8 21h3v1h-3zM15 21h6v1h-6zM24 21h5v1h-5zM0 22h7v1h-7zM8 22h2v1h-2zM11 22h2v1h-2zM14 22h1v1h-1zM18 22h3v1h-3zM22 22h1v1h-1zM24 22h2v1h-2zM27 22h1v1h-1zM0 23h1v1h-1zM6 23h1v1h-1zM8 23h1v1h-1zM12 23h4v1h-4zM18 23h1v1h-1zM20 23h1v1h-1zM24 23h2v1h-2zM27 23h1v1h-1zM0 24h1v1h-1zM2 24h3v1h-3zM6 24h1v1h-1zM9 24h1v1h-1zM12 24h1v1h-1zM17 24h1v1h-1zM20 24h5v1h-5zM26 24h1v1h-1zM0 25h1v1h-1zM2 25h3v1h-3zM6 25h1v1h-1zM8 25h1v1h-1zM11 25h3v1h-3zM15 25h3v1h-3zM19 25h3v1h-3zM23 25h3v1h-3zM28 25h1v1h-1zM0 26h1v1h-1zM2 26h3v1h-3zM6 26h1v1h-1zM8 26h2v1h-2zM12 26h2v1h-2zM18 26h2v1h-2zM23 26h1v1h-1zM26 26h1v1h-1zM28 26h1v1h-1zM0 27h1v1h-1zM6 27h1v1h-1zM10 27h1v1h-1zM12 27h1v1h-1zM15 27h2v1h-2zM20 27h1v1h-1zM25 27h1v1h-1zM27 27h1v1h-1zM0 28h7v1h-7zM8 28h2v1h-2zM11 28h1v1h-1zM13 28h1v1h-1zM15 28h1v1h-1zM18 28h6v1h-6zM27 28h1v1h-1z" fill="currentColor"/></svg></div>
+    <div class="qrcap"><b>Follow along on your device</b><span>bilgecagaydogdu.com/emn_estonia</span></div>
+  </div>
 </section>
 
 <!-- 1c -->
@@ -600,6 +612,7 @@ body.idle .nav:hover{opacity:1}
   <div class="tb">
     <h1>Thank you</h1>
     <div class="contact"><b>Bilgeçağ Aydoğdu</b><span>bilgecagaydogdu.com</span></div>
+    <div class="cta">Do you think you or your institution might be interested in mobile data solutions? Then please <a href="mailto:bilgecagaydogdu@gmail.com">contact us</a> &mdash; we would like to hear from you.</div>
     <ul class="refs">
       <li>A novel activity space approach to discover displacement patterns via mobile phone data. <i>EPJ Data Science</i>, 2025.</li>
       <li>Combining Twitter and mobile phone data to observe border-rush. <i>Journal of Computational Social Science</i>, 2025.</li>
