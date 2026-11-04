@@ -494,6 +494,7 @@ body.idle .nav:hover{opacity:1}
       <p class="src" style="font-style:italic">Illustrative, not observed data.</p>
     </div>
     <div class="lgc" id="lg1d"><button class="lgi" type="button" data-k="st"><i></i><span><em>Stayers</em><small>at home, away from fighting</small></span><b>0</b></button><button class="lgi" type="button" data-k="dg"><i></i><span><em>In danger</em><small>near fighting, still at home</small></span><b>0</b></button><button class="lgi" type="button" data-k="lv"><i></i><span><em>Fled</em><small>left home for safer places</small></span><b>0</b></button><button class="lgi" type="button" data-k="on"><i></i><span><em>Moved on</em><small>had to flee again</small></span><b>0</b></button><button class="lgi" type="button" data-k="rt"><i></i><span><em>Returned</em><small>went back home</small></span><b>0</b></button><button class="lgi" type="button" data-k="ab"><i></i><span><em>Crossed a border</em><small>airlift and land crossings</small></span><b>0</b></button><button class="lgi" type="button" data-k="lt"><i></i><span><em>Displaced 30+ days</em><small>still away after a month</small></span><b>0</b></button>
+      <p class="src" style="font-style:italic">Illustrative numbers. They do not reflect observed data.</p>
 </div>
   </div>
 </section>
@@ -2423,7 +2424,7 @@ MOD.s13b=(()=>{const svg=$('#xv13b');if(!svg)return {};
     const ew=x=>base(x)+(x<=XC?0:.78*(1-Math.exp(-(x-XC)/150))*(.4+.6*Math.exp(-(x-XC)/420)));const TH=.22,bnd=.07;let xa=XC;while(ew(xa)<TH)xa+=1;let xp=XC,pm=0;for(let x=XC;x<=X1;x++)if(ew(x)>pm){pm=ew(x);xp=x;}
     sv('rect',{x:X0,y:UB-TH*HH,width:xa-X0,height:(TH-(.12-bnd))*HH,class:'bsr'},e);sv('line',{x1:X0,y1:UB-TH*HH,x2:X1,y2:UB-TH*HH,class:'thr'},e);
     sv('path',{d:P(ew,UB,xa,X1),class:'unseen'},e);sv('path',{d:P(ew,UB,X0,xa),class:'obs dr',pathLength:1},e);
-    const ay=UB-TH*HH,py=UB-pm*HH-16;sv('circle',{cx:xa,cy:ay,r:10,class:'al'},e);T(e,'Alert',xa+22,ay+8,'xa');
+    const ay=UB-TH*HH,aly=ay+30,py=UB-pm*HH-16;sv('circle',{cx:xa,cy:aly,r:10,class:'al'},e);T(e,'Alert',xa+22,aly+8,'xa');
     sv('line',{x1:xa,y1:py,x2:xp-10,y2:py,class:'lt'},e);sv('path',{d:`M${xp-10} ${py-8}L${xp+2} ${py}L${xp-10} ${py+8}Z`,class:'lth'},e);T(e,'lead time',(xa+xp)/2,py-14,'xs','middle');
     T(e,'normal range',(X0+XC)/2-10,UB-TH*HH-16,'xs','middle');
     T(e,'Early warning',460,120,'xm o','middle');T(e,'signal leaves the normal range',460,150,'xs','middle');T(e,'→ alert, before the peak',460,176,'xs','middle');
